@@ -6,6 +6,7 @@
 %define	pdir	Class
 %define	pnam	DBI-mysql
 Summary:	Extensions to Class::DBI for MySQL
+Summary(pl):	Rozszerzenie Class::DBI dla MySQLa
 Name:		perl-Class-DBI-mysql
 Version:	0.17
 Release:	1
@@ -18,11 +19,15 @@ BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-
 %description
 This is an extension to Class::DBI, containing several functions and
-optimisations for the MySQL database. Instead of setting Class::DBI as your
-base class, use this instead.
+optimisations for the MySQL database. Instead of setting Class::DBI as
+your base class, use this instead.
+
+%description -l pl
+Jest to rozszerzenie Class::DBI, zawieraj±ce kilka funkcji i
+optymalizacji dla bazy danych MySQL. Zamiast ustawiania jako klasê
+podstawow± Class::DBI, mo¿na ustawiæ tê.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
