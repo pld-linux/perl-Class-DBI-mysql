@@ -1,12 +1,12 @@
 #
 # Conditional build:
-# _with_tests - do not perform "make test"
+# _with_tests - perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Class
 %define	pnam	DBI-mysql
 Summary:	Extensions to Class::DBI for MySQL
-Summary(pl):	Rozszerzenie Class::DBI dla MySQLa
+Summary(pl):	Rozszerzenie Class::DBI dla MySQL-a
 Name:		perl-Class-DBI-mysql
 Version:	0.17
 Release:	1
@@ -33,7 +33,6 @@ podstawow± Class::DBI, mo¿na ustawiæ tê.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-# Don't use pipes here: they generally don't work. Apply a patch.
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 
