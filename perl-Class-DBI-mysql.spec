@@ -1,19 +1,19 @@
-#
+
 # Conditional build:
-# _with_tests - perform "make test"
-#
+%bcond_with	tests	# perform "make test" (requires database connection)
+
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Class
 %define	pnam	DBI-mysql
 Summary:	Extensions to Class::DBI for MySQL
 Summary(pl):	Rozszerzenie Class::DBI dla MySQL-a
 Name:		perl-Class-DBI-mysql
-Version:	0.17
+Version:	0.19
 Release:	1
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	20dc4ef6c5ef1f25a56072cba477dcc0
+# Source0-md5:	1bee398db7a9751a2a1b9737bd1b9608
 BuildRequires:	perl-devel >= 5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
@@ -38,7 +38,7 @@ podstawow± Class::DBI, mo¿na ustawiæ tê.
 
 %{__make}
 
-%{?_with_tests:%{__make} test}
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
