@@ -8,12 +8,12 @@
 Summary:	Extensions to Class::DBI for MySQL
 Summary(pl):	Rozszerzenie Class::DBI dla MySQL-a
 Name:		perl-Class-DBI-mysql
-Version:	0.22
+Version:	0.23
 Release:	1
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	a800b64d88c8ce681e7a23e472156615
+# Source0-md5:	6e7c969b87643af08e46053bd538308c
 BuildRequires:	perl-devel >= 5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
