@@ -3,8 +3,8 @@
 %bcond_with	tests	# perform "make test" (requires database connection)
 
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Class
-%define	pnam	DBI-mysql
+%define		pdir	Class
+%define		pnam	DBI-mysql
 Summary:	Extensions to Class::DBI for MySQL
 Summary(pl):	Rozszerzenie Class::DBI dla MySQL-a
 Name:		perl-Class-DBI-mysql
