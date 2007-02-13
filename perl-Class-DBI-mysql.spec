@@ -6,7 +6,7 @@
 %define		pdir	Class
 %define		pnam	DBI-mysql
 Summary:	Extensions to Class::DBI for MySQL
-Summary(pl.UTF-8):   Rozszerzenie Class::DBI dla MySQL-a
+Summary(pl.UTF-8):	Rozszerzenie Class::DBI dla MySQL-a
 Name:		perl-Class-DBI-mysql
 Version:	1.00
 Release:	1
