@@ -8,7 +8,7 @@ Summary:	Extensions to Class::DBI for MySQL
 Summary(pl.UTF-8):	Rozszerzenie Class::DBI dla MySQL-a
 Name:		perl-Class-DBI-mysql
 Version:	1.00
-Release:	2
+Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
